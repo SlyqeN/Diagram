@@ -57,7 +57,7 @@ void MainWindow::on_loadDataButton_clicked()
 void MainWindow::on_buildChartsButton_clicked()
 {
     if (model->rowCount() == 0) {
-        QMessageBox::warning(this, "Ошибка", "Сначала загрузите данные.");
+        QMessageBox::warning(this, "Ошибка!", "Сначала загрузите данные.");
         return;
     }
     buildCharts();
